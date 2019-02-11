@@ -1,0 +1,13 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  nama = 'Rivo Fausta Valiano';
+  alamat = 'jln. Besar Ijen 77C/E11';
+
+  tanggal = Date.now();
+}
