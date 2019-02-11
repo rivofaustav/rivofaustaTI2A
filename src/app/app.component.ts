@@ -1,3 +1,4 @@
+import { TableService } from './table.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -10,4 +11,12 @@ export class AppComponent {
   alamat = 'jln. Besar Ijen 77C/E11';
 
   tanggal = Date.now();
+
+  hby: any[];
+  constructor(private tableServ:TableService){}
+
+  ngOnInit() {
+    this.hby = this.tableServ.getRivo();
+    
+  }
 }
